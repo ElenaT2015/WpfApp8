@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="Arial" TargetType="ComboBoxItem"/>
+    <Style x:Key="Times New Roman" TargetType="ComboBoxItem"/>
+    <Style x:Key="Verdana" TargetType="ComboBoxItem"/>
+    <Style x:Key="12" TargetType="ComboBoxItem"/>
+    <Style x:Key="14" TargetType="ComboBoxItem"/>
+    <Style x:Key="16" TargetType="ComboBoxItem"/>
+
+</ResourceDictionary>
