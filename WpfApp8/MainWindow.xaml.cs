@@ -149,5 +149,10 @@ namespace WpfApp8
         {
             textbox.Foreground = Brushes.White;
         }
+
+        private void styleBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

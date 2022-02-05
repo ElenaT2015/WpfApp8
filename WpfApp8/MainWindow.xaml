@@ -47,7 +47,7 @@
         </Menu>
         <ToolBarTray Grid.Row="1" Style="{DynamicResource ToolBarTrayStyle}">
             <ToolBar>
-                <ComboBox x:Name="styleBox" SelectedIndex="0" Width="180"/>
+                <ComboBox x:Name="styleBox" SelectedIndex="0" Width="180" SelectionChanged="styleBox_SelectionChanged"/>
                 <ComboBox  SelectedIndex="0" Width="200" ItemsSource="{DynamicResource textstyle}" SelectionChanged="ComboBox_SelectionChanged" />
                 <ComboBox  SelectedIndex="2" Width="50"  ItemsSource="{DynamicResource fontsize}" SelectionChanged="ComboBox_SelectionChanged_1" />
             </ToolBar>
@@ -73,7 +73,7 @@
                 </StackPanel>
             </ToolBar>
         </ToolBarTray>
-        <TextBox x:Name="textbox" Grid.Row="2" Style="{DynamicResource TextBoxStyle}">
+        <TextBox x:Name="textbox" Grid.Row="2" Style="{Binding ElementName=textStylebinding, Path=ItemsSource}" FontSize="{Binding ElementName=textStylebinding, Path=ItemsSource}">
         </TextBox>
     </Grid>
 </Window>
